@@ -16,7 +16,7 @@ floating = 2.
 
 string = '2'
 
-# This might seem important, but here is the difference
+# This might not seem important, but here is the difference
 
 print 'This is integer division :' +str(1/integer)
 
@@ -44,7 +44,21 @@ z=complex(3,1)
 
 print z*z, z
 
+# Operators on complex, int, and float are pretty obvious (*,+,-,/)
 
+#Two non-trivial operators are exponent
+
+print 2**(3)
+#prints 8
+
+#remainder % (mod)
+
+print 15%7
+#prints 1 (i.e. 15 mod 7 = 1)
+
+
+
+######################################################################
 # These basic objects can then be stored as elements of larger objects
 
 # The most basic object is a list

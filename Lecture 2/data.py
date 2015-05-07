@@ -57,6 +57,22 @@ print 15%7
 #prints 1 (i.e. 15 mod 7 = 1)
 
 
+# There are lots of string operators available.
+string1= '#cta200'
+string2= 'hw1.py'
+
+#we can find and replace
+string3=string2.replace('hw1','hw2')
+print string3
+#prints hw2.py
+
+#we can check the beginning or the end
+for string in [string1, string2]:
+    if string.startswith('#'):
+        print string + ' starts with a #'
+    if string.endswith('.py'):
+        print string + ' is a python script'
+
 
 ######################################################################
 # These basic objects can then be stored as elements of larger objects
@@ -133,8 +149,20 @@ for thing in animals:
     print 'I like '+thing
 
 
+# List are often an important part of string operators
 
-# A dictionary is a more
+# Suppose I have some type
+
+text1='dogs cats birds'
+
+# I can split this into a list of individual elements as
+animals = text1.split()
+print animals
+#prints ['dogs','cats',birds']
+
+
+##########################
+# A dictionary is a list of keys and values.  The values may even be lists of values
 b={}
 b['dogs']=5
 b['cats']=10

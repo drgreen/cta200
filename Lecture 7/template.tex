@@ -111,7 +111,7 @@ y&=&\sin(x+y) \nonumber \\
 \eea
 Most math functions as easy to look up.  Derivatives are often written
 \beq
-\frac{\mathrm d}{\mathrm d x} = \frac{\partial}{\partial_x} + \frac{\partial}{\partial y} \frac{\partial y}{\partial x} + \ldots
+\frac{\mathrm d}{\mathrm d x} = \frac{\partial}{\partial x} + \frac{\partial}{\partial y} \frac{\partial y}{\partial x} + \ldots
 \eeq
 
 Now we can refer to it in the text whenever we want, just by writing blah blah blah equation \ref{giveitaname} or (\ref{giveitaname}).  Notice that we also labelled the section title so that can say things like blah blah Section \ref{sec:intro}.  Never manually write equation 1.4 or section 1 because these things can change when you edit the document and you don't want to have to keep track of the changes.
@@ -169,20 +169,6 @@ a & b & c \\
 d & e & f \\
 g & h & i \end{array}
 \eeq
-
-\beq
-\begin{array}{||c|c|c||}
-a & b & c \\
-d & e & f \\
-g & h & i \end{array}
-\eeq
-\beq
-\begin{array}{||c|c|c||}
-a & b & c \\
-\hline
-d & e & f \\
-g & h & i \end{array}
-\eeq
 We can also use automatic sizing to make this look like a matrix
 \beq
 \left(\begin{array}{ccc}
@@ -190,7 +176,6 @@ a & b & c \\
 d & e & f \\
 g & h & i \end{array}\right) = {\cal M}
 \eeq
-
 There are also direct matrix options 
 \beq
 \begin{pmatrix}
